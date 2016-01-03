@@ -26,6 +26,8 @@ Nomster::Application.routes.draw do
   #     end
   #   end
 
+  root 'places#index'
+
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
