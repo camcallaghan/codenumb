@@ -28,6 +28,10 @@ Nomster::Application.routes.draw do
 
   root 'places#index'
 
+  resources :places
+  # The priority is based upon order of creation: first created -> highest priority.
+  # More comments here ......
+
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales

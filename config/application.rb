@@ -28,4 +28,6 @@ module Nomster
     config.assets.precompile += %w( .svg .eot .woff .ttf )
 
   end
+
+
 end
