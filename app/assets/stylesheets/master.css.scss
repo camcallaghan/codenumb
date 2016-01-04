@@ -1,3 +1,9 @@
+body {
+	background: url('/assets/triangular.png');
+font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -13,4 +19,10 @@
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
+}
+
+.navbar.navbar-inverse {
+  background:url('/assets/lodyas.png');
+  border-radius:0;
+  box-shadow: 0px 1px 18px #2a2a2a;
 }
