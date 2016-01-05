@@ -15,6 +15,9 @@ gem 'sass-rails'
 #Adding Simpleform gem to handle our form
 gem 'simple_form'
 
+#Devising gem for authentication of profile candidates
+gem 'devise', '>= 3.2.4'
+
 ## Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.0.5'
 
