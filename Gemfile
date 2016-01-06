@@ -21,6 +21,12 @@ gem 'devise', '>= 3.2.4'
 ## Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.0.5'
 
+# A Ruby gem that converts an address to a latitude & longitude location
+gem "geocoder"
+
+# A Ruby gem that makes it easier to securely configure Rails applications.
+gem "figaro", ">= 1.0.0"
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
