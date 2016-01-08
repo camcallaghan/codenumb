@@ -24,6 +24,8 @@ gem 'will_paginate', '~> 3.0.5'
 # A Ruby gem that converts an address to a latitude & longitude location
 gem "geocoder"
 
+gem "pry"
+
 # A Ruby gem that makes it easier to securely configure Rails applications.
 gem "figaro", ">= 1.0.0"
 
