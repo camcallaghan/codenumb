@@ -93,3 +93,13 @@ function initMap() {
     </blockquote>
   </div>
 <% end %>
+
+<%= simple_form_for @photo do |f| %>
+        <div class="modal-body">
+          <%= f.input :picture %>
+          <%= f.input :caption %>
+          <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+          end
+
+
+
