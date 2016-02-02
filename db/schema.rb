@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 20160119130918) do
     t.datetime "updated_at"
   end
 
+  add_index "photos", ["place_id"], name: "index_photos_on_place_id", using: :btree
+
   create_table "places", force: true do |t|
     t.string   "name"
     t.text     "description"
