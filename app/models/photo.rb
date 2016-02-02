@@ -1,5 +1,5 @@
 class Photo < ActiveRecord::Base
-	belongs_to :user
+	belongs_to :place
 	has_one :place_id
 	has_many :photos
 

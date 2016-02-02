@@ -12,10 +12,11 @@ class PhotosController < ApplicationController
 		@place = Place.find(params[:id])
 		@photo = Photo.new
 	end
-  
-  private
+
+	private
   
   def photo_params
     params.require(:photo).permit(:caption, :picture)
   end
 end
+
