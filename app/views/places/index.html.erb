@@ -9,7 +9,7 @@
     	<% end %>
 
 	<% if place.comments.present? %>
-		<div class="col-xs-12">
+		<div class="col-xs-12 col-sm-6">
     		<blockquote>
       			<% if place.comments.last.humanized_rating.present? %>
         			<b><%= place.comments.last.humanized_rating %></b> -
@@ -19,6 +19,19 @@
     		</blockquote>
   		</div>
   	<% end %>
+
+    <% if place.photos.present? %>
+    <div class="col-xs-12 col-sm-6">
+        <blockquote>
+            <% if place.photos.last.present? %>
+              <b><%= place.photos.last %></b> -
+            <% end %>
+            <%= place.photos.last %>
+            <small><%= place.photos.last%></small>
+        </blockquote>
+      </div>
+    <% end %>
+
 	</div>
 <% end %>
 

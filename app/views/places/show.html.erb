@@ -95,15 +95,9 @@ function initMap() {
 <% end %>
 
 <div class="clear"></div>
-  <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
-    <div class="modal-body">
-      <%= f.input :picture %>
-      <%= f.input :caption %>
-      <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
-    </div>
-  <% end %>
-
-<h1>Photos</h1>
+  
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+<h1 class="pull-left">Photos</h1>
 
 <% @place.photos.each do |photo| %>
   <div>
@@ -113,6 +107,35 @@ function initMap() {
     </blockquote>
   </div>
 <% end %>
+
+<!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ourModal">
+  Upload your Photo
+</button>
+<div class="clear"></div>
+
+<!-- Modal -->
+<div class="modal fade" id="ourModal" tabindex="-1" role="dialog" aria-labelledby="ourModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="ourModalLabel">Upload your picture here</h4>
+      </div>
+        <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+      <div class="modal-content">
+        <%= f.input :picture %>
+        <%= f.input :caption %>
+      </div>
+      <div class="modal-popup">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <%= f.submit "Upload your photo", class: 'btn btn-primary' %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+</div>
 
 
 
