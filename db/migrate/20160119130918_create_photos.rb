@@ -1,15 +1,15 @@
 class CreatePhotos < ActiveRecord::Migration
   def change
-    create_table :photos do |t|
+	create_table :photos do |t|
 
-    	t.string :picture
-      t.string :caption
-    	t.integer :place_id
+		t.string :picture
+	  t.string :caption
+		t.integer :place_id
 
 
-      t.timestamps
-    end
+	  t.timestamps
+	end
 
-    add_index :photos, :place_id
+	add_index :photos, :place_id
   end
 end
