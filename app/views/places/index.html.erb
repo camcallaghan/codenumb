@@ -23,9 +23,7 @@
     <% if place.photos.present? && place.photos.last.picture.present? %>
     <div class="col-xs-12">
         <blockquote>
-            <% if place.photos.last.picture? %>
-              <b><%= place.photos.last %></b> -
-            <% end %>
+              <b><%= image_tag place.photos.last, class: 'img-responsive' %></b> -
             <%= place.photos.last.picture %>
             <small><%= place.photos.last%></small>
         </blockquote>
