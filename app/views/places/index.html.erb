@@ -20,13 +20,13 @@
   		</div>
   	<% end %>
 
-    <% if place.photos.present? %>
-    <div class="col-xs-12 col-sm-6">
+    <% if place.photos.present? && place.photos.last.picture.present? %>
+    <div class="col-xs-12">
         <blockquote>
-            <% if place.photos.last.present? %>
+            <% if place.photos.last.picture? %>
               <b><%= place.photos.last %></b> -
             <% end %>
-            <%= place.photos.last %>
+            <%= place.photos.last.picture %>
             <small><%= place.photos.last%></small>
         </blockquote>
       </div>
