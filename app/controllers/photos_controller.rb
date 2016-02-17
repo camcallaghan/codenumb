@@ -13,6 +13,26 @@ class PhotosController < ApplicationController
 		@photo = Photo.new
 	end
 
+	def edit
+		@photo = Photo.find(params[:id])
+		if @place.photo != current_photo
+    	return render :text => 'Not Allowed', :status => :forbidden
+  	end
+	end
+
+	def update
+		@photo = Photo.find(params[:id])
+		if @place.photo != current_photo
+    	return render :text => 'Not Allowed', :status => :forbidden
+  	end
+		@photo.update_attributes(place_params)
+		if @photo.valid?
+    	redirect_to root_path
+  	else
+    	render :edit, :status => :unprocessable_entity
+  	end
+	end
+
 	private
   
   def photo_params
