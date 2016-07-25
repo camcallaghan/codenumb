@@ -29,7 +29,7 @@ gem 'carrierwave'
 gem 'will_paginate', '~> 3.0.5'
 
 # A Ruby gem that converts an address to a latitude & longitude location
-gem "geocoder"
+gem "geocoder", "1.3.4"
 
 gem "pry"
 
