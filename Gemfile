@@ -23,7 +23,7 @@ gem 'simple_form'
 gem 'devise', '>= 3.2.4'
 
 #Simple way for uploading files
-gem 'carrierwave'
+gem 'carrierwave', "0.10.0"
 
 ## Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.0.5'
