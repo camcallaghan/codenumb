@@ -36,6 +36,9 @@ gem "pry"
 # A Ruby gem that makes it easier to securely configure Rails applications.
 gem "figaro", ">= 1.0.0"
 
+# A Ruby gem that facilitates communication between Carrierwave and Amazon S3
+gem "fog" 
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
