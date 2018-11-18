@@ -1,10 +1,13 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
+
+# Use turbolinks as javascript asset
+gem 'turbolinks'
 
 # speedier assets delivery in production
 # gem allows heroku errors logs providing useful information
