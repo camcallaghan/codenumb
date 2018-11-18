@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     CFPropertyList (2.3.2)
     actionmailer (4.0.1)
@@ -31,6 +32,9 @@ GEM
       execjs
       json
     bcrypt (3.1.10)
+    bootstrap (4.0.0.alpha6)
+      autoprefixer-rails (>= 6.0.3)
+      sass (>= 3.4.19)
     bootstrap-sass (3.3.5.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.3.0)
@@ -216,6 +220,7 @@ GEM
     pg (0.18.4)
     pkg-config (1.1.7)
     polyglot (0.3.5)
+    popper_js (1.11.1)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -293,6 +298,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap (= 4.0.0.alpha6)
   bootstrap-sass (~> 3.3.5.1)
   carrierwave (= 0.10.0)
   coffee-rails (~> 4.0.0)
@@ -303,6 +309,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   pg
+  popper_js (~> 1.11.1)
   pry
   rails (= 4.0.1)
   rails_12factor
